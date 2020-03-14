@@ -18,10 +18,9 @@ The code above is an example of a GET HTTP request that will fetch a users info 
  
  Extend refers to the class inheritance within APEX. Since Apex follows the principle of OOP, extend allows one class to inherit the class methods of a another class. Implementation refers to the usage of Interfaces in Apex where a class can utilize a method depending on your application. However, to utilize interfaces, another class must implement it by providing a body for all of the methods contained in the interface. 
 
-## Problem: Take a list of integers and find the common digit? 
-## Create a file using any language(javascript preferred but not required) and name it challenge-3.
-## Array of number [11232, 1712, 2311]
-## common digits = [1, 1, 2] (if a digit occurs x times in all numbers, you need to include that digit x times in your answer)  
+## Problem: Take a list of integers and find the common digit? Create a file using any language(javascript preferred but not required) and name it challenge-3.Array of number [11232, 1712, 2311] common digits = [1, 1, 2] (if a digit occurs x times in all numbers, you need to include that digit x times in your answer)  
+
+See file, challenge-3.js 
 
 Build a simple Mortgage calculator using Lightning components 
 Before getting started please create a  trailhead account.
