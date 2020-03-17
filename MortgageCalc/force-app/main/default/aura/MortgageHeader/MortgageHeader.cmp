@@ -1,0 +1,5 @@
+<aura:component >
+	<h1 class="slds-text-heading--label">Mortgage Calculator</h1>
+    <p class="text-1">Use our mortgage calculator to estimate your monthly mortgage payment. You can input a different home price, down payment, loan term and interest rate to see how your monthly payment changes.</p>
+    <p class="text-2">Our monthly payment estimates are broken down by principal and interest, property taxes and homeowners insurance. We take our calculator a step further by factoring in your credit score range, zip code and HOA fees to give you a more precise payment estimate. You’ll also go into the home-buying process with a more accurate picture of how to calculate mortgage payments and purchase with confidence. After you run some estimates, read on for more education and home-buying tips.</p>
+</aura:component>

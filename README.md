@@ -22,13 +22,7 @@ The code above is an example of a GET HTTP request that will fetch a users info 
 
 See file, challenge-3.js 
 
-Build a simple Mortgage calculator using Lightning components 
-Before getting started please create a  trailhead account.
-It is recommended that you complete this module to give you a better understanding of Lightning components.
-At the very bottom of the first module (Before you start) you will need to create a trailhead playground. This is the playground you will use to build your Mortgage calculator.
-All of your work will be done within this playground using the Salesforce developer console.
-Salesforce provides helpful components. Make sure you use Aura Components and not Lightning Web Components (you can set the Programming Model filter to Aura Components)
-The mortgage calculator should behave similarly to this.
+## Build a simple Mortgage calculator using Lightning components 
 
 Mortgage Calculator Stories
 A user can input the price of a home

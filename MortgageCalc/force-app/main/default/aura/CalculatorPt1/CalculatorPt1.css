@@ -1,0 +1,194 @@
+.THIS {
+    margin-left: 10%;
+    margin-top:2%;
+    padding-right:2%;
+    width: 80%;
+    display:flex;
+    margin-bottom:10%;
+}
+
+
+.THIS input:required {
+    box-shadow:none;
+}
+
+
+.THIS .myCustomClass label { 
+    text-align: right;
+}
+
+.THIS .house {
+    width:100%;
+}
+
+.THIS .down-payment::after {
+  content: "%";
+    position: relative;
+    top: 12px;
+    right: -40px;
+    color: grey;
+    font-size: 11px;
+}
+
+.THIS .slds-form-element {
+    display: flex;
+	flex-direction: row-reverse;
+    margin: 10px; 
+    justify-content: flex-end;
+}
+
+
+
+.THIS .slds-slider-label__range {
+    display: none; 
+}
+
+.THIS .slds-slider__value {
+    display: none; 
+}
+
+.THIS .slds-input {
+    margin-right: 10px;
+    padding: 10px;
+    font-weight: bold; 
+}
+
+.THIS .aaaa {
+    display: flex;   
+}
+
+
+.THIS .home-price input {
+    font-weight:bold;
+    font-size: 19px;
+    border:none; 
+    border-right: 1px solid grey; 
+    width: 80%;
+}
+
+.THIS .home-price input:focus {
+    outline:none; 
+    border: 1px solid grey;
+    border-bottom: 5px solid #0c14e0;  
+}
+
+
+.THIS .slds-select {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 39px;
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: bold;
+    background: white;
+    padding: 10px;
+    border: 1px solid #cfcfd4;
+
+}
+
+.THIS .slds-select:focus {
+    outline:none; 
+}
+
+.THIS #input-4 {
+	width: 40%;
+}
+
+.THIS .text-4-monthly {
+    font-size:50px;
+    font-weight:bold;
+    padding-right: 20px;
+}
+
+.THIS .total-monthly {
+    display:flex; 
+    width:100%;
+}
+
+.THIS .monthly-text {
+    font-size: 15px;
+    color: grey;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.THIS .graph-container {
+    padding-bottom:5%;
+    width: 100%; 
+}
+
+.THIS .more-inputs {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: end;
+}
+
+.THIS .payment-text-graph {
+   color: #0c14e0;
+    border-bottom: 1px solid #0c14e0;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.THIS .button-calc {
+    padding: 20px;
+    border-radius:0;
+    background-color: #0c14e0;
+    color: white; 
+    font-weight: bold;
+    font-size:13px;
+}
+
+.THIS .button-calc:hover {
+    cursor:pointer;
+}
+
+.THIS .button-calc:focus {
+    outline:none;
+}
+
+.THIS .total-text{
+    font-weight:bold;
+    margin-top:5%;
+}
+
+.THIS .slds-slider__range {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 225px;
+  height: 25px; 
+  background: #d3d3d3; 
+  outline: none;
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+}
+
+.THIS .slds-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 25px; 
+  height: 25px; 
+  background: #4CAF50; 
+  cursor: pointer; 
+}
+
+.THIS .slds-slider__range::-moz-range-thumb {
+  width: 25px; 
+  height: 25px;
+  background: #4CAF50; 
+  cursor: pointer; 
+}
+
+.THIS .slds-p-right_small.slds-p-left_small {
+    margin-left: 20%;
+    width: 50%;
+    margin-left: 10%;
+}
+.THIS .slds-p-around_small {
+            width: 50%;
+            border-right: 1px solid black;
+    		padding-right:10%;
+        }
