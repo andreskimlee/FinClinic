@@ -1,10 +1,7 @@
-<aura:component >
-    
-		<ltng:require scripts="{!$Resource + '/odometer.js'}"
-                      styles="{!$Resource  + '/css.css'}"
-                      />
-        <aura:attribute name="newCalc" type="MortgageCalculator__c" 
-                        default="{ 'sobjectType': 'MortgageCalculator__c',                                         
+<aura:component controller="backEndCalc">
+
+    <ltng:require scripts="{!$Resource + '/odometer.js'}" styles="{!$Resource  + '/css.css'}" />
+    <aura:attribute name="newCalc" type="MortgageCalculator__c" default="{ 'sobjectType': 'MortgageCalculator__c',                                         
                             'Price__c': 80000,
                             'Down_Payment__c': 20,
                             'Down_Payment_Amount__c': 16000,
@@ -12,74 +9,61 @@
                             'Interest__c': 6,
                             'monthly__c' : 0,
                             'tax__c': 0,
-                            'insurance__c': 0
-                                 }"/>
-    	<lightning:layout horizontalAlign="spread">
-            <lightning:layoutItem padding="around-small">
-        <form >	
-            <img class="house" src="https://media0.giphy.com/media/MC4Ovw5mAF3OpGwjHg/source.gif"></img>
-            <lightning:input aura:id="mortgagecalculator" 
-                name="price"
-                type="number"          
-                formatter="currency"
-                value="{!v.newCalc.Price__c}"
-                label="Home Price"
-                class="home-price"
-                onchange="{!c.handleChange}"
-            /> 
-            <lightning:slider onchange="{!c.handleChange}" class="slider" max="5000000" min="0" value="{!v.newCalc.Price__c}" size="large"/>
-            <div>Down Payment</div>
+                            'insurance__c': 0,
+                            'backEndTest__c': 0
+                                 }" />
+    <lightning:layout horizontalAlign="spread">
+        <lightning:layoutItem padding="around-small">
+            <form>
+                <img class="house" src="https://media0.giphy.com/media/MC4Ovw5mAF3OpGwjHg/source.gif"></img>
+                <lightning:input aura:id="mortgagecalculator" name="price" type="number" formatter="currency"
+                    value="{!v.newCalc.Price__c}" label="Home Price" class="home-price" onchange="{!c.handleChange}" />
+                <lightning:slider onchange="{!c.handleChange}" class="slider" max="5000000" min="0"
+                    value="{!v.newCalc.Price__c}" size="large" />
+                <div>Down Payment</div>
                 <div class="aaaa">
-                    
-                <lightning:input type="number" aura:id="mortgagecalculator"
-                                 value="{!v.newCalc.Down_Payment_Amount__c}"
-                                 formatter="currency"
-                                 variant="label-inline" 
-                                 />
-                <lightning:input type="number" aura:id="mortgagecalculator"
-                             name="down-percent"
-                             formatter="number"             			
-                             value="{!v.newCalc.Down_Payment__c}"
-                             class="down-payment"
-                             onchange="{!c.handleChange2}"
-                             />
+
+                    <lightning:input type="number" aura:id="mortgagecalculator"
+                        value="{!v.newCalc.Down_Payment_Amount__c}" formatter="currency" variant="label-inline" />
+                    <lightning:input type="number" aura:id="mortgagecalculator" name="down-percent" formatter="number"
+                        value="{!v.newCalc.Down_Payment__c}" class="down-payment" onchange="{!c.handleChange2}" />
                 </div>
                 <div>Length Of Loan</div>
-                <lightning:select  name="select1" label="" value="{!v.newCalc.Length_of_loan__c}" onChange="{!c.handleSelect}">
+                <lightning:select name="select1" label="" value="{!v.newCalc.Length_of_loan__c}"
+                    onChange="{!c.handleSelect}">
                     <option value="30">30 Years</option>
                     <option value="20">20 Years</option>
                     <option value="15">15 Years</option>
                     <option value="10">10 Years</option>
-                </lightning:select> 
+                </lightning:select>
                 <div>Interest Rate</div>
-                <lightning:input type="number" aura:id="mortgagecalculator"
-                             name="interest"
-                             formatter="number"          			
-                             value="{!v.newCalc.Interest__c}"
-                             class="down-payment"
-                             />
-        </form>
-            </lightning:layoutItem>
-            
-            <lightning:layoutItem padding="horizontal-small">
-                <div class="total-monthly">
-                	<div class="text-4-monthly">{!v.newCalc.monthly__c}</div>
-                	<div class="monthly-text">Your estimated monthly payment</div>
-                </div>    
-                <div class="graph-container">
-                    <div class="payment-text-graph">Payment Breakdown</div>
-                 <div class="more-inputs">
-                	<lightning:input type="number" value="{!v.newCalc.insurance__c}" label="Homeowner's Insurance"/>
-                    <lightning:input type="number" value="{!v.newCalc.tax__c}" label="Property tax"/>
-                     <lightning:button class="button-calc" onclick="{!c.calcMonthly}" label="Calculate Monthly Payment"/>
-                     <div class="total-text">Total monthly payment = {!v.newCalc.monthly__c}</div>
+                <lightning:input type="number" aura:id="mortgagecalculator" name="interest" formatter="number"
+                    value="{!v.newCalc.Interest__c}" class="down-payment" />
+            </form>
+        </lightning:layoutItem>
+
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="total-monthly">
+                <div class="text-4-monthly">{!v.newCalc.monthly__c}</div>
+                <div class="monthly-text">Your estimated monthly payment</div>
+            </div>
+            <div class="graph-container">
+                <div class="payment-text-graph">Payment Breakdown</div>
+                <div class="more-inputs">
+                    <lightning:input type="number" value="{!v.newCalc.insurance__c}" label="Homeowner's Insurance" />
+                    <lightning:input type="number" value="{!v.newCalc.tax__c}" label="Property tax" />
+                    <lightning:button class="button-calc" onclick="{!c.calcMonthly}"
+                        label="Calculate Monthly Payment" />
+                    <!-- <lightning:button class="button-calc" onclick="{!c.callBackEnd}"  -->
+
+                    <div class="total-text">Total monthly payment = {!v.newCalc.monthly__c}</div>
                 </div>
-                </div>
-               
-            </lightning:layoutItem>
-            <lightning:layoutItem >
-                
-            </lightning:layoutItem>
-            
-	</lightning:layout>
+            </div>
+
+        </lightning:layoutItem>
+        <lightning:layoutItem>
+
+        </lightning:layoutItem>
+
+    </lightning:layout>
 </aura:component>
