@@ -20,37 +20,19 @@ The code above is an example of a GET HTTP request that will fetch a users info 
 
 ## Problem: Take a list of integers and find the common digit? Create a file using any language(javascript preferred but not required) and name it challenge-3.Array of number [11232, 1712, 2311] common digits = [1, 1, 2] (if a digit occurs x times in all numbers, you need to include that digit x times in your answer)  
 
-See file, challenge-3.js 
+![alt-text]https://i.imgur.com/sIfrDxS.png
+
+Helper method To Find Occurences for each unique number
+![alt-text]https://imgur.com/g9MRlpQ
+
+See file, challenge-3.js for more detailed look.
 
 ## Build a simple Mortgage calculator using Lightning components 
 
-Mortgage Calculator Stories
-A user can input the price of a home
-A user can input down payment of home
-A user can input Length of the loan.
-Possible Options: [15,30] year loans
-Default: 30 year
-A user can input an interest rate
-Default: 6%
-A user can input Property Tax 
-A user can input Homeowners Insurance assume
-A user clicks a button and it calculates the following.
-Monthly payment of the loan (using the formula below)
-
-Factors:
-Number of Periodic Payments (n) = Payments per year times number of years
-Periodic Interest Rate (i) = Annual rate divided by number of payments per year
-Discount Factor (D) = {[(1 + i) ^n] - 1} / [i(1 + i)^n]
-
-Example: Assume you borrow $100,000 at 6 percent for 30 years, to be repaid monthly. What is the monthly payment (P)? The monthly payment is $599.55.
-
-Formula:
-n = 360 (30 years times 12 monthly payments per year)
-i = .005 (6 percent annually expressed as .06, divided by 12 monthly payments per year. For more details, see how to convert percentages to decimal format)
-D = 166.7916 ({[(1+.005)^360] - 1} / [.005(1+.005)^360])
-Loan Payment = Amount / Discount Factor = 100,000 / 166.7916 = 599.55
-
-Extra Features (Apex)
+[Please Click Here To Visit The Live Link](https://www.google.com)
+(An Email was sent out for the ID and Password to access the page)
+Code base is available within this repo at MortgageCalc > force-app > aura 
+## Extra Features (Apex)
 Performs the calculation in Apex (backend) instead of calculating the result on the client side.
 
 Follow up question:
