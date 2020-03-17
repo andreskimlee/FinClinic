@@ -29,6 +29,8 @@ See file, challenge-3.js for more detailed look.
 
 ## Build a simple Mortgage calculator using Lightning components 
 
+![alt-text](https://i.imgur.com/QzuC3ms.png)
+
 [Please Click Here To Visit The Live Link](https://playful-fox-66iw24-dev-ed.lightning.force.com/c/MortgageCalculator.app)
 (An Email was sent out for the ID and Password to access the page)
 Code base is available within this repo at MortgageCalc > force-app > aura 
